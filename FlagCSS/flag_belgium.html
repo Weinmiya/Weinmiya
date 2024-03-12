@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .black{background-color: black;
+            width: 300px;
+            height: 600px;
+            position: relative;}
+
+        .yellow{background-color: rgb(250, 224, 66);
+            width: 300px;
+            height: 600px;
+            position: absolute;
+            left: 300px;}  
+            
+        .red{background-color: rgb(237, 41, 57);
+            width: 300px;
+            height: 600px;
+            position: absolute; /*絕對 找最近的祖先*/
+            left: 300px;}    
+
+    </style>
+</head>
+
+<body>
+    <div class="black">
+        <div class="yellow">
+            <div class="red"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
